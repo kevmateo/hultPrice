@@ -1,0 +1,152 @@
+.pagina-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background: var(--bg-color-pagina);
+}
+
+.contenedor-info {  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70vh;
+  margin: 0 2rem 2rem 2rem;
+}
+
+.resumen-app {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2.5rem 0 0;
+  flex-wrap: wrap;
+}
+
+.resumen-app h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: .5rem 0;
+}
+
+.resumen-app p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin: .5rem 0;
+}
+
+.formulario-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-color-componentes);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow-elevado);
+  margin: 0 0 0 2rem;
+}
+
+.titulo-login {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 2rem;
+}
+
+.input-usuario,
+.input-contraseña {
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: var(--borde-input);
+  width: 300px;
+  font-size: 1rem;
+}
+
+.input-contraseña:focus,
+.input-usuario:focus {
+  outline: none;
+  
+}
+
+.p-ejemplo-usuario {
+  font-size: .7rem;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  width: 90%;
+  margin-bottom: .7rem;
+  visibility: hidden;
+}
+
+.input-usuario:focus + .p-ejemplo-usuario {
+  visibility: visible;
+}
+
+.boton-iniciar {
+  margin-top: 1.2rem;
+  padding: 14px 16px;
+  border-radius: 10px;
+  width: 335px;
+  background: #279574;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.boton-votantes-info {
+  padding: 14px 16px;
+  margin-top: 2rem;
+  background: #1F3A5F;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all .3s ease;
+}
+
+.boton-votantes-info:hover {
+  background: #152a48;
+}
+
+.icono-bajar {
+  width: 25px;
+  height: 25px; 
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor-info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+  }
+
+  .resumen-app {
+    margin: 0;
+    padding: 0;
+  }
+
+  .formulario-login {
+    margin: 0;
+    padding: 0;
+  }
+
+  .input-usuario,
+  .input-contraseña {
+    width: 100%;
+  }
+
+  .boton-iniciar {
+    width: 100%;
+  }
+}
